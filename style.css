@@ -20,6 +20,7 @@
 html
 {
 	min-height: 100vh;
+	cursor: url("Images/too686.cur") , auto ;
 }
 
 body {
@@ -72,6 +73,10 @@ body {
 	
 }
 
+.card:hover {
+
+	cursor: url("Images/Thor\'s\ Hammer.cur") , auto;
+}
 .card-face{
 	position: absolute;
 	width: 100%;
@@ -133,4 +138,28 @@ body {
 
 .card.visible .card-front{
 	transform: rotateY(0);
+}
+
+
+.card.matches .card-value{
+
+	animation: scaling 1s linear infinite 500ms;
+
+}
+
+@keyframes scaling{
+
+	0%, 100%{
+		transform: scale(1);
+
+	}
+	25% {
+		transform: scale(1.2);
+	}
+	50%{
+		transform: scale(1);
+	}
+	75%{
+		transform: scale(0.8);
+	}
 }
