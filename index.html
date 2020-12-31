@@ -5,14 +5,16 @@
 
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="script.js"> async </script>
 	<title>Matching Game</title>
 </head>
 
 <body>
-	<div class="overlay-text ">
+	<div class="overlay-text visible">
 		CLICK HERE TO START 
 	</div>
-	<div id = "game-over-text" class="overlay-text">
+	<div id = "game-over-text" class="overlay-text ">
 		Game Over
 		<span class="over-text-small"> 
 			CLICK TO RESTART
@@ -31,7 +33,7 @@
 				Time <span id="time-left">100</span>
 			</div>
 			<div class="game-info">
-				Flips <span id="flips-left">0</span>
+				Flips <span id="flips">0</span>
 			</div>
 		</div>
 		<div class="card">
@@ -166,7 +168,6 @@
 
 	</div>
 
-	<script=src="script.js"></script>
 
 </body>
 

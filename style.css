@@ -141,7 +141,7 @@ body {
 }
 
 
-.card.matches .card-value{
+.card.matches .card-front .card-value{
 
 	animation: scaling 1s linear infinite 500ms;
 
