@@ -1,0 +1,136 @@
+@font-face{
+	font-family: "avenger";
+	src: url("Images/avenger.ttf")
+	
+	
+}
+
+@font-face{
+	font-family: "avenger1";
+	src: url("Images/avenger.ttf")
+	
+	
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html
+{
+	min-height: 100vh;
+}
+
+body {
+	margin: 0;
+	background: radial-gradient(#4169E1,#FF0000);
+	
+}
+
+.heading{
+	
+	color: black;
+	text-align: center;
+	font-size: 3em;
+	font-weight: normal;
+	font-family: avenger , serif; 
+}
+
+.game-info{
+	
+	font-family: avenger1 , serif;
+	font-size: 1.5em;
+	
+	
+}
+
+.game-info-container{
+	grid-column: 1/ -1;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.game-container{
+	display: grid;
+	grid-template-columns: repeat(4,auto);
+	grid-gap: 10px;
+	margin: 50px;
+	justify-content: center;
+	perspective: 500px;
+	
+}
+
+.card{
+	
+	height: 170px;
+	width: 115px;
+	position: relative;
+	background-color:darkcyan;
+	
+}
+
+.card-face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	backface-visibility: hidden;
+	border-radius: 12px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: cyan;
+	transition: transform 700ms ease-in-out;
+}
+
+
+.iron{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 170px;
+	width: 115px;
+	transform: scale(1);
+	transition: transform 100ms ease-in-out;
+	
+}
+
+.card-value{
+
+	transition: transform 100ms ease-in-out;
+	transform: scale(0.8);
+
+}
+
+
+.card-front{
+	transform: rotateY(180deg);
+	border-color: blue;
+}
+
+.card-back {
+
+	transform: rotateY(0);
+}
+
+.card-back:hover .iron{
+	
+	transform: scale(1.3);
+}
+
+.card-front:hover .card-value{
+	transform: scale(1);
+}
+
+.card:visible .card-back{
+	transform: rotateY(-180deg);
+}
+
+.card:visible .card-front{
+	transform: rotateY(0);
+}
