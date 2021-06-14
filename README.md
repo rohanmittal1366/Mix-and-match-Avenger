@@ -1,6 +1,8 @@
 # Mix-and-match-Avenger
+## Tools
+1. HTML 
+2. CSS
+3. JavaScript
 
 
-# This is the  [link ](https://rohanmittal1366.github.io/Mix-and-match-Avenger/) to play the game
-
-In this i included javascript and css for making this game with some sound track of click, mathed card, background song and some extra features.
+### A game where you can match cards with another and i added some sound effects and song in background and some differect cursor, fonts to make it look better. 
