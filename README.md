@@ -4,5 +4,5 @@
 2. CSS
 3. JavaScript
 
-
-### A game where you can match cards with another and i added some sound effects and song in background and some differect cursor, fonts to make it look better. 
+### Built VanillaJS Game with OOP code structure and UI desgined with CSS
+### Implemented time limit, card flipping, card matching, winner declaration,background sound, total cards flipped and used Fisher Yates shuffle algorithm for shuffling cards
